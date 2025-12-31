@@ -48,7 +48,7 @@ const Stats = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Our Impact in Numbers
           </h2>
-          <p className="text-xl text-blue-200 max-w-3xl mx-auto">
+          <p className="text-xl text-[#0a95b4] max-w-3xl mx-auto">
             Delivering consistent compliance excellence across the telecom sector
           </p>
         </div>
@@ -79,7 +79,7 @@ const Stats = () => {
               </div>
               
               <h3 className="text-xl font-bold mb-2">{stat.label}</h3>
-              <p className="text-blue-200">{stat.description}</p>
+              <p className="text-[#0a95b4]">{stat.description}</p>
             </div>
           ))}
         </div>

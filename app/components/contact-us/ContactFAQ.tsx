@@ -49,7 +49,7 @@ const ContactFAQ = () => {
     <section className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-bold text-[#0a95b4] mb-4">Frequently Asked Questions</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Common questions about contacting us and our compliance services
           </p>
@@ -67,10 +67,10 @@ const ContactFAQ = () => {
                   className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 >
                   <div className="flex items-center">
-                    <FaQuestionCircle className="text-blue-600 mr-4" />
+                    <FaQuestionCircle className="text-[#0a95b4] mr-4" />
                     <span className="text-lg font-semibold text-gray-800">{faq.question}</span>
                   </div>
-                  <div className="text-blue-600">
+                  <div className="text-[#0a95b4]">
                     {activeIndex === index ? <FaChevronUp /> : <FaChevronDown />}
                   </div>
                 </button>
@@ -89,8 +89,8 @@ const ContactFAQ = () => {
           </div>
 
           {/* Still Have Questions */}
-          <div className="mt-12 bg-gradient-to-r from-blue-50 to-white rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-blue-900 mb-4">
+          <div className="mt-12 bg-linear-to-r from-blue-50 to-white rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-[#0a95b4] mb-4">
               Still have questions?
             </h3>
             <p className="text-gray-600 mb-6">
@@ -99,13 +99,13 @@ const ContactFAQ = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:contact@compliancesgurus.com"
-                className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                className="btn-primary"
               >
                 Email Your Question
               </a>
               <a
                 href="tel:+918178861057"
-                className="px-6 py-3 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+                className="px-6 py-3 border-2 border-[#0a95b4] text-[#0a95b4] rounded-xl"
               >
                 Call for Immediate Help
               </a>

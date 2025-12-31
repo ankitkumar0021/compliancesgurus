@@ -54,7 +54,7 @@ const TeamSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Meet Our Leadership Team
           </h2>
-          <p className="text-xl text-blue-200 max-w-3xl mx-auto">
+          <p className="text-xl text-[#0a95b4] max-w-3xl mx-auto">
             Experienced professionals dedicated to ensuring your telecom compliance success
           </p>
         </div>
@@ -70,7 +70,7 @@ const TeamSection = () => {
                 {/* Avatar */}
                 <div className="mb-6 md:mb-0 md:mr-8">
                   <div className="w-32 h-32 rounded-full bg-blue-300/30 flex items-center justify-center">
-                    <div className="text-4xl font-bold text-blue-300">
+                    <div className="text-4xl font-bold text-[#0a95b4]">
                       {member.name.charAt(0)}
                     </div>
                   </div>
@@ -79,18 +79,18 @@ const TeamSection = () => {
                 {/* Info */}
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                  <p className="text-blue-300 font-semibold mb-4">{member.position}</p>
+                  <p className="text-[#0a95b4] font-semibold mb-4">{member.position}</p>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="flex items-center">
-                      <FaPhone className="mr-3 text-blue-300" />
-                      <a href={`tel:${member.phone}`} className="hover:text-blue-200">
+                      <FaPhone className="mr-3 text-[#0a95b4]" />
+                      <a href={`tel:${member.phone}`} className="hover:text-[#0a95b4]">
                         {member.phone}
                       </a>
                     </div>
                     <div className="flex items-center">
-                      <FaEnvelope className="mr-3 text-blue-300" />
-                      <a href={`mailto:${member.email}`} className="hover:text-blue-200">
+                      <FaEnvelope className="mr-3 text-[#0a95b4]" />
+                      <a href={`mailto:${member.email}`} className="hover:text-[#0a95b4]">
                         {member.email}
                       </a>
                     </div>
@@ -104,14 +104,14 @@ const TeamSection = () => {
                   <div className="flex items-center">
                     <FaAward className="mr-3 text-yellow-400" />
                     <div>
-                      <div className="text-sm text-blue-200">Experience</div>
+                      <div className="text-sm text-[#0a95b4]">Experience</div>
                       <div className="font-semibold">{member.experience}</div>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <FaGraduationCap className="mr-3 text-green-400" />
                     <div>
-                      <div className="text-sm text-blue-200">Education</div>
+                      <div className="text-sm text-[#0a95b4]">Education</div>
                       <div className="font-semibold">{member.education}</div>
                     </div>
                   </div>
@@ -140,10 +140,10 @@ const TeamSection = () => {
                     <span>{member.location}</span>
                   </div>
                   <div className="flex space-x-3">
-                    <a href={member.social.linkedin} className="hover:text-blue-300">
+                    <a href={member.social.linkedin} className="hover:text-[#0a95b4]">
                       <FaLinkedin className="text-xl" />
                     </a>
-                    <a href={member.social.twitter} className="hover:text-blue-300">
+                    <a href={member.social.twitter} className="hover:text-[#0a95b4]">
                       <FaTwitter className="text-xl" />
                     </a>
                   </div>
@@ -164,7 +164,7 @@ const TeamSection = () => {
                   <span className="text-2xl font-bold">{area.count}+</span>
                 </div>
                 <h4 className="font-bold text-lg">{area.name}</h4>
-                <p className="text-sm text-blue-200">Years Experience</p>
+                <p className="text-sm text-[#0a95b4]">Years Experience</p>
               </div>
             ))}
           </div>
@@ -180,12 +180,12 @@ const TeamSection = () => {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <p className="text-xl text-blue-200 mb-8">
+          <p className="text-xl text-[#0a95b4] mb-8">
             Ready to work with our expert team on your telecom compliance needs?
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-blue-50 transition-colors"
+            className="inline-flex items-center px-8 py-4 bg-white text-[#0a95b4] font-bold rounded-lg hover:bg-blue-50 transition-colors"
           >
             Schedule Consultation
           </a>

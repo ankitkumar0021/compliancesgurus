@@ -51,7 +51,7 @@ const ValuesSection = () => {
     <section className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0a95b4] mb-4">
             Our Core Values
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -70,7 +70,7 @@ const ValuesSection = () => {
                   {value.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">{value.title}</h3>
+              <h3 className="text-xl font-bold text-[#0a95b4] mb-4">{value.title}</h3>
               <p className="text-gray-600">{value.description}</p>
               
               <div className="mt-6 pt-6 border-t border-gray-100">
@@ -90,7 +90,7 @@ const ValuesSection = () => {
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
                 Our Commitment to Excellence
               </h3>
-              <p className="text-blue-200">
+              <p className="text-white">
                 At Compliance Gurus, we don&apos;t just follow regulations—we master them. Our values drive 
                 every aspect of our service delivery, ensuring that your telecom business remains 
                 compliant, competitive, and confident in the face of regulatory challenges.

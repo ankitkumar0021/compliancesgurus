@@ -9,7 +9,7 @@ const CTA = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Simplify Your Telecom Compliance?
           </h2>
-          <p className="text-xl text-blue-200 max-w-3xl mx-auto">
+          <p className="text-xl text-[#0a95b4] max-w-3xl mx-auto">
             Get expert guidance and ensure 100% regulatory compliance for your ISP or telecom business
           </p>
         </div>
@@ -20,10 +20,10 @@ const CTA = () => {
               <FaPhoneAlt className="text-3xl" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Call Now</h3>
-            <p className="text-blue-200 mb-6">Speak directly with our compliance experts</p>
+            <p className="text-[#0a95b4] mb-6">Speak directly with our compliance experts</p>
             <a
               href="tel:+918178861057"
-              className="inline-block bg-white text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
+              className="inline-block bg-white text-[#0a95b4] font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
             >
               +91 81788 61057
             </a>
@@ -34,10 +34,10 @@ const CTA = () => {
               <FaCalendarAlt className="text-3xl" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Schedule Consultation</h3>
-            <p className="text-blue-200 mb-6">Free 30-minute compliance assessment</p>
+            <p className="text-[#0a95b4] mb-6">Free 30-minute compliance assessment</p>
             <Link
               href="/contact"
-              className="inline-block bg-white text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
+              className="inline-block bg-white text-[#0a95b4] font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
             >
               Book Now
             </Link>
@@ -48,10 +48,10 @@ const CTA = () => {
               <FaHeadset className="text-3xl" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Email Support</h3>
-            <p className="text-blue-200 mb-6">Get detailed proposals and quotes</p>
+            <p className="text-[#0a95b4] mb-6">Get detailed proposals and quotes</p>
             <a
               href="mailto:contact@compliancesgurus.com"
-              className="inline-block bg-white text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
+              className="inline-block bg-white text-[#0a95b4] font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
             >
               Email Us
             </a>
@@ -60,7 +60,7 @@ const CTA = () => {
 
         {/* Final CTA */}
         <div className="bg-white rounded-3xl p-8 md:p-12 text-center">
-          <h3 className="text-3xl font-bold text-blue-900 mb-4">
+          <h3 className="text-3xl font-bold text-[#0a95b4] mb-4">
             Don&apos;t Risk Penalties - Ensure Compliance Today
           </h3>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">

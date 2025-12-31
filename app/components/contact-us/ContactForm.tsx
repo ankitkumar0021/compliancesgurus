@@ -116,7 +116,7 @@ const ContactForm = () => {
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-blue-900 mb-4">Send us a Message</h2>
+        <h2 className="text-3xl font-bold text-[#0a95b4] mb-4">Send us a Message</h2>
         <p className="text-gray-600">
           Fill out the form below and our compliance experts will contact you within 24 hours
         </p>
@@ -278,13 +278,13 @@ const ContactForm = () => {
                 Solve this simple math problem to verify you&apos;re human:
               </p>
               <div className="flex items-center justify-center sm:justify-start space-x-4">
-                <div className="text-3xl font-bold text-blue-600 bg-white p-4 rounded-lg shadow">
+                <div className="text-3xl font-bold text-[#0a95b4] bg-white p-4 rounded-lg shadow">
                   {captcha.num1} + {captcha.num2} = ?
                 </div>
                 <button
                   type="button"
                   onClick={generateCaptcha}
-                  className="text-sm text-blue-600 hover:text-blue-800 font-semibold"
+                  className="text-sm text-[#0a95b4] hover:text-[#0a95b4] font-semibold"
                 >
                   ↻ New Problem
                 </button>

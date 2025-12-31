@@ -8,7 +8,7 @@ const MapSection = () => {
 
   const transportOptions = [
     {
-      icon: <FaCar className="text-blue-600" />,
+      icon: <FaCar className="text-[#0a95b4]" />,
       title: 'By Car',
       description: 'Parking available in the building basement',
       time: '20-30 mins from Delhi',
@@ -36,7 +36,7 @@ const MapSection = () => {
     <section className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-900 mb-4">Find Our Office</h2>
+          <h2 className="text-4xl font-bold text-[#0a95b4] mb-4">Find Our Office</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Visit us at our headquarters in Noida for in-person consultations and meetings
           </p>
@@ -57,7 +57,7 @@ const MapSection = () => {
                   </div>
                   <button
                     onClick={handleGetDirections}
-                    className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="flex items-center btn-primary"
                   >
                     <FaDirections className="mr-2" />
                     Get Directions
@@ -76,7 +76,7 @@ const MapSection = () => {
                   </div>
                 )}
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.8694510370955!2d77.31867747534172!3d28.570514875693357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44f6e8f62cb%3A0x78e1a20d5cb7b8f7!2sSector%2018%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1703681575556!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3504.0140437346304!2d77.32501200000002!3d28.569341!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5bc275104e1%3A0xf296de5be453bf26!2sCompliance%20Gurus%20-%20ISP%20VNO%20DOT%20%2FAGR(License%20Fee)%2F%20TRAI%2F%20TTP%20Compliances!5e0!3m2!1sen!2sin!4v1767177906808!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -105,7 +105,7 @@ const MapSection = () => {
           {/* Transportation Info */}
           <div className="space-y-6">
             <div className="bg-white rounded-2xl shadow-xl p-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-6">How to Reach</h3>
+              <h3 className="text-xl font-bold text-[#0a95b4] mb-6">How to Reach</h3>
               
               <div className="space-y-4">
                 {transportOptions.map((option, index) => (
@@ -116,7 +116,7 @@ const MapSection = () => {
                     <div className="flex-grow">
                       <h4 className="font-bold text-gray-800 mb-1">{option.title}</h4>
                       <p className="text-sm text-gray-600 mb-1">{option.description}</p>
-                      <p className="text-sm font-semibold text-blue-600">{option.time}</p>
+                      <p className="text-sm font-semibold text-[#0a95b4]">{option.time}</p>
                     </div>
                   </div>
                 ))}
@@ -125,7 +125,7 @@ const MapSection = () => {
 
             {/* Parking Info */}
             <div className="bg-white rounded-2xl shadow-xl p-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-4">Visitor Information</h3>
+              <h3 className="text-xl font-bold text-[#0a95b4] mb-4">Visitor Information</h3>
               
               <div className="space-y-3">
                 <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
@@ -142,7 +142,7 @@ const MapSection = () => {
                 </div>
                 <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                   <span className="font-medium">Security Check</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-bold">
+                  <span className="bg-blue-100 text-[#0a95b4] px-3 py-1 rounded-full text-sm font-bold">
                     Required
                   </span>
                 </div>

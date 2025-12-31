@@ -47,7 +47,7 @@ const Testimonial = () => {
             <MdOutlineVerified className="mr-2" />
             Trusted by Industry Leaders
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0a95b4] mb-4">
             What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -58,7 +58,7 @@ const Testimonial = () => {
         {/* Testimonial Carousel */}
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-gradient-to-br from-blue-50 to-white rounded-3xl shadow-xl p-8 md:p-12">
-            <FaQuoteLeft className="text-4xl text-blue-200 mb-6" />
+            <FaQuoteLeft className="text-4xl text-[#0a95b4] mb-6" />
             
             <div className="mb-8">
               <p className="text-xl md:text-2xl text-gray-700 italic mb-6">
@@ -74,22 +74,22 @@ const Testimonial = () => {
 
             <div className="flex items-center justify-between">
               <div>
-                <h4 className="text-xl font-bold text-blue-900">{testimonials[currentIndex].name}</h4>
-                <p className="text-blue-600">{testimonials[currentIndex].position}</p>
+                <h4 className="text-xl font-bold text-[#0a95b4]">{testimonials[currentIndex].name}</h4>
+                <p className="text-[#0a95b4]">{testimonials[currentIndex].position}</p>
                 <p className="text-gray-500">{testimonials[currentIndex].company}</p>
               </div>
               
               <div className="flex space-x-4">
                 <button
                   onClick={prevTestimonial}
-                  className="p-3 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+                  className="p-3 rounded-full bg-blue-100 text-[#0a95b4] hover:bg-blue-600 hover:text-white transition-colors"
                   aria-label="Previous testimonial"
                 >
                   <FaChevronLeft />
                 </button>
                 <button
                   onClick={nextTestimonial}
-                  className="p-3 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+                  className="p-3 rounded-full bg-blue-100 text-[#0a95b4] hover:bg-blue-600 hover:text-white transition-colors"
                   aria-label="Next testimonial"
                 >
                   <FaChevronRight />

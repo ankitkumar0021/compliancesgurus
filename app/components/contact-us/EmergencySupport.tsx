@@ -46,7 +46,7 @@ const EmergencySupport = () => {
       email: 'emergency@compliancesgurus.com',
       available: '24/7',
       action: 'mailto:emergency@compliancesgurus.com',
-      color: 'bg-blue-100 text-blue-700',
+      color: 'bg-blue-100 text-[#0a95b4]',
     },
   ]
 

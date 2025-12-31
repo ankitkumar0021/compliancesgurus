@@ -70,7 +70,7 @@ export default function CompliancePlanning() {
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold mb-2">{stat.value}</div>
-                <div className="text-blue-200 text-sm">{stat.label}</div>
+                <div className="text-[#0a95b4] text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -101,26 +101,16 @@ export default function CompliancePlanning() {
                     </li>
                   ))}
                 </ul>
-                {service.reports.length > 0 && (
-                  <div className="mb-6">
-                    <div className="text-sm font-semibold text-gray-700 mb-2">Reporting Frequency:</div>
-                    <div className="flex flex-wrap gap-2">
-                      {service.reports.map((report, reportIndex) => (
-                        <span key={reportIndex} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">{report}</span>
-                      ))}
-                    </div>
-                  </div>
-                )}
               </div>
             </div>
           ))}
         </div>
 
         {/* Additional Features & Process Steps */}
-        <div className="bg-gradient-to-br from-blue-50 to-white rounded-3xl p-10 shadow-xl">
+        <div className="bg-linear-to-br from-blue-50 to-white rounded-3xl p-10 shadow-xl">
 
           {/* Additional Features */}
-          <h3 className="text-3xl font-extrabold text-blue-900 mb-10 text-center">Why Choose Our Compliance Management?</h3>
+          <h3 className="text-3xl font-extrabold text-[#0a95b4] mb-10 text-center">Why Choose Our Compliance Management?</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { title: "Real-time Monitoring", description: "Continuous tracking of compliance status with automated alerts", icon: "📊", color: "bg-blue-100" },
@@ -137,7 +127,7 @@ export default function CompliancePlanning() {
 
           {/* Process Steps */}
           <div className="mt-16">
-            <h4 className="text-2xl font-bold text-blue-900 mb-8 text-center">Our Compliance Process</h4>
+            <h4 className="text-2xl font-bold text-[#0a95b4] mb-8 text-center">Our Compliance Process</h4>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {[
                 { step: "01", title: "Assessment", desc: "Compliance gap analysis" },
@@ -147,7 +137,7 @@ export default function CompliancePlanning() {
               ].map((step, index) => (
                 <div key={index} className="relative flex flex-col items-center">
                   <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-md text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                    <div className="text-3xl font-bold text-blue-600 mb-3">{step.step}</div>
+                    <div className="text-3xl font-bold text-[#0a95b4] mb-3">{step.step}</div>
                     <div className="font-semibold text-gray-800 mb-2">{step.title}</div>
                     <div className="text-sm text-gray-600">{step.desc}</div>
                   </div>

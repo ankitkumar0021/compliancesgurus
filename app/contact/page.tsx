@@ -2,7 +2,6 @@ import ContactDetails from "../components/contact-us/ContactDetails";
 import ContactFAQ from "../components/contact-us/ContactFAQ";
 import ContactForm from "../components/contact-us/ContactForm";
 import ContactHero from "../components/contact-us/ContactHero";
-import EmergencySupport from "../components/contact-us/EmergencySupport";
 import MapSection from "../components/contact-us/MapSection";
 
 
@@ -23,7 +22,7 @@ export default function ContactPage() {
         </div>
       </div>
       <MapSection />
-      <EmergencySupport />
+      {/* <EmergencySupport /> */}
       <ContactFAQ />
     </div>
   )

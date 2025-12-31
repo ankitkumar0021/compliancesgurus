@@ -21,23 +21,23 @@ const AboutHero = () => {
     return () => clearInterval(typingInterval)
   }, [])
 
-  const stats = [
-    {
-      number: '12+',
-      label: 'Years Experience',
-      icon: <FaChartLine className="text-blue-600" />,
-    },
-    {
-      number: '50+',
-      label: 'Happy Clients',
-      icon: <FaAward className="text-green-600" />,
-    },
-    {
-      number: '100%',
-      label: 'Compliance Rate',
-      icon: <FaShieldAlt className="text-purple-600" />,
-    },
-  ]
+  // const stats = [
+  //   {
+  //     number: '12+',
+  //     label: 'Years Experience',
+  //     icon: <FaChartLine className="text-[#0a95b4]" />,
+  //   },
+  //   {
+  //     number: '50+',
+  //     label: 'Happy Clients',
+  //     icon: <FaAward className="text-green-600" />,
+  //   },
+  //   {
+  //     number: '100%',
+  //     label: 'Compliance Rate',
+  //     icon: <FaShieldAlt className="text-purple-600" />,
+  //   },
+  // ]
 
   return (
     <section className="relative overflow-hidden gradient-bg text-white">
@@ -50,7 +50,7 @@ const AboutHero = () => {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-              <span>Trusted Telecom Compliance Partner Since 2012</span>
+              <span>Trusted Telecom Compliance Partner Since 2020</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -60,23 +60,23 @@ const AboutHero = () => {
               </span>
             </h1>
             
-            <p className="text-xl text-blue-200 mb-8">
+            <p className="text-xl text-white mb-8">
               Your trusted partner in navigating the complexities of Department of Telecommunications (DoT) 
               compliance for Internet Service Providers across India.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
+            {/* <div className="grid grid-cols-3 gap-4 mb-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold mb-2">{stat.number}</div>
                   <div className="flex items-center justify-center lg:justify-start space-x-2">
                     <div className="text-lg">{stat.icon}</div>
-                    <div className="text-sm text-blue-200">{stat.label}</div>
+                    <div className="text-sm text-[#0a95b4]">{stat.label}</div>
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Content - Image/Graphics */}
@@ -87,7 +87,7 @@ const AboutHero = () => {
                   <FaShieldAlt className="text-2xl text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Commitment</h3>
-                <p className="text-blue-200">
+                <p className="text-white">
                   Dedicated to ensuring 100% regulatory compliance for telecom businesses across India
                 </p>
               </div>
@@ -115,9 +115,6 @@ const AboutHero = () => {
               </div>
             </div>
             
-            {/* Floating Elements */}
-            <div className="absolute -top-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full animate-float"></div>
-            <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-green-500/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
           </div>
         </div>
       </div>
