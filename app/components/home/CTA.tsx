@@ -75,7 +75,7 @@ const CTA = () => {
             </Link>
             <Link
               href="/services"
-              className="btn-secondary inline-flex items-center justify-center"
+              className="btn-secondary text-[#0a95b4] inline-flex items-center justify-center"
             >
               View All Services
             </Link>
