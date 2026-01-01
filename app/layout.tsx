@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 import Header from './components/layouts/Header'
 import Footer from './components/layouts/Footer'
+import WhatsAppButton from './common/WhatsAppButton'
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ 
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className="">
         <Header />
         <main>{children}</main>
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>

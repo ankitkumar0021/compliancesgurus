@@ -201,17 +201,6 @@ const ApproachSection = () => {
                   </div>
                 ))}
               </div>
-
-              <div className="mt-8 pt-8 border-t border-gray-200">
-                <div className="text-center">
-                  <p className="text-gray-600 mb-4">
-                    Each approach is tailored to your specific compliance needs
-                  </p>
-                  <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
-                    Request Custom Plan
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>

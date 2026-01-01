@@ -2,12 +2,14 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { FaBars, FaTimes, FaChartLine } from 'react-icons/fa'
+import { FaBars, FaTimes, FaChartLine, FaChevronDown } from 'react-icons/fa'
 import { MdPhone, MdEmail } from 'react-icons/md'
 import ImageComponent from '@/app/ui/ImageComponent'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [activeMenu, setActiveMenu] = useState<string | null>(null)
+  const [mobileMenu, setMobileMenu] = useState<string | null>(null)
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -36,7 +38,8 @@ export default function Header() {
       <div className="bg-primary text-white text-sm hidden md:block">
         <div className="container mx-auto px-4 py-2 flex justify-between">
           <div className="flex gap-6">
-            <span className="flex items-center"><MdPhone className="mr-2" />+91 81788 61057</span>
+            <span className="flex items-center"><MdPhone className="mr-2" />+91 8178861057</span>
+            <span className="flex items-center"><MdPhone className="mr-2" />+91 9654272754</span>
             <span className="flex items-center"><MdEmail className="mr-2" />contact@compliancesgurus.com</span>
           </div>
           <div className="flex items-center gap-2 text-green-300">
@@ -59,13 +62,23 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-8">
             {navItems.map(item =>
               item.children ? (
-                <div key={item.name} className="relative group">
-                  <span className="font-semibold cursor-pointer hover:text-[#0a95b4]">
+                <div
+                  key={item.name}
+                  className="relative"
+                  onMouseEnter={() => setActiveMenu(item.name)}
+                  onMouseLeave={() => setActiveMenu(null)}
+                >
+                  <span className="flex items-center gap-1 font-semibold cursor-pointer hover:text-[#0a95b4]">
                     {item.name}
+                    <FaChevronDown className="text-xs" />
                   </span>
-                  <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-white shadow rounded w-64">
+
+                  <div
+                    className={`absolute left-0 top-full mt-3 w-64 rounded-lg bg-white shadow-lg transition-all duration-200
+                    ${activeMenu === item.name ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'}`}
+                  >
                     {item.children.map(sub => (
-                      <Link key={sub.name} href={sub.path} className="block px-4 py-3 hover:bg-gray-100">
+                      <Link key={sub.name} href={sub.path} className="block px-4 py-3 text-sm hover:bg-gray-100">
                         {sub.name}
                       </Link>
                     ))}
@@ -86,26 +99,56 @@ export default function Header() {
         </nav>
 
         {/* Mobile Menu */}
-        {open && (
-          <div className="md:hidden bg-white px-4 pb-6">
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300
+          ${open ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}
+        >
+          <div className="bg-white px-4 pb-6 space-y-2">
             {navItems.map(item =>
               item.children ? (
-                <div key={item.name} className="mt-4">
-                  <p className="font-semibold mb-2">{item.name}</p>
-                  {item.children.map(sub => (
-                    <Link key={sub.name} href={sub.path} className="block py-2 text-sm" onClick={() => setOpen(false)}>
-                      {sub.name}
-                    </Link>
-                  ))}
+                <div key={item.name}>
+                  <button
+                    onClick={() =>
+                      setMobileMenu(mobileMenu === item.name ? null : item.name)
+                    }
+                    className="w-full flex justify-between items-center py-3 font-semibold"
+                  >
+                    {item.name}
+                    <FaChevronDown
+                      className={`transition-transform duration-300
+                      ${mobileMenu === item.name ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300
+                    ${mobileMenu === item.name ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'}`}
+                  >
+                    {item.children.map(sub => (
+                      <Link
+                        key={sub.name}
+                        href={sub.path}
+                        className="block pl-4 py-2 text-sm text-gray-700"
+                        onClick={() => setOpen(false)}
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               ) : (
-                <Link key={item.name} href={item.path} className="block py-3 font-semibold" onClick={() => setOpen(false)}>
+                <Link
+                  key={item.name}
+                  href={item.path}
+                  className="block py-3 font-semibold"
+                  onClick={() => setOpen(false)}
+                >
                   {item.name}
                 </Link>
               )
             )}
           </div>
-        )}
+        </div>
       </header>
     </>
   )

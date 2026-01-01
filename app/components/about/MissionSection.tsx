@@ -55,7 +55,7 @@ const MissionSection = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-xl">
+            <div className="bg-linear-to-br from-blue-50 to-white rounded-2xl p-8 shadow-xl">
               <div className="text-center mb-8">
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6">
                   <span className="text-3xl font-bold text-[#0a95b4]">12+</span>
@@ -86,7 +86,7 @@ const MissionSection = () => {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className={`${pillar.bgColor} rounded-2xl p-8 card-hover text-center`}
+              className={`${pillar.bgColor} rounded-2xl p-8 card-hover text-center border-2 border-gray-100`}
             >
               <div className="inline-flex p-4 rounded-xl bg-white mb-6">
                 <div className={pillar.color}>

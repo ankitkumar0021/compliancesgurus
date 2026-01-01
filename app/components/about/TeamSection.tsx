@@ -1,198 +1,123 @@
-import { 
-  FaPhone, 
-  FaEnvelope, 
-  FaLinkedin, 
-  FaTwitter,
-  FaAward,
-  FaGraduationCap
-} from 'react-icons/fa'
-import { MdWork, MdLocationOn } from 'react-icons/md'
+'use client'
 
-const TeamSection = () => {
+import { FaPhone, FaEnvelope, FaLinkedin, FaAward } from 'react-icons/fa'
+import { MdLocationOn } from 'react-icons/md'
+
+export default function TeamSectionV2() {
   const teamMembers = [
     {
       name: 'Rakesh Kaundal',
-      position: 'Director & Compliance Head',
+      role: 'Director & Compliance Head',
       phone: '+91 81788 61057',
       email: 'rakesh@compliancesgurus.com',
-      experience: '15+ years',
+      experience: '15+ Years Experience',
       expertise: ['DoT Regulations', 'AGR Calculations', 'TRAI Compliance'],
-      education: 'MBA in Telecom Management',
       location: 'Noida, India',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-      },
+      linkedin: '#',
     },
     {
       name: 'Shivam Prajapati',
-      position: 'Director & Operations Head',
+      role: 'Director & Operations Head',
       phone: '+91 9654272754',
       email: 'shivam@compliancesgurus.com',
-      experience: '12+ years',
+      experience: '12+ Years Experience',
       expertise: ['ISP Licensing', 'TTP Compliance', 'Regulatory Reporting'],
-      education: 'Engineering in Telecom',
       location: 'Noida, India',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-      },
+      linkedin: '#',
     },
   ]
 
-  const expertiseAreas = [
-    { name: 'DoT Compliance', count: 15, color: 'bg-blue-500' },
-    { name: 'TRAI Regulations', count: 12, color: 'bg-green-500' },
-    { name: 'AGR Calculations', count: 10, color: 'bg-purple-500' },
-    { name: 'ISP Licensing', count: 8, color: 'bg-orange-500' },
-  ]
-
   return (
-    <section className="section-padding gradient-bg text-white">
-      <div className="container mx-auto">
+    <section className="py-24 bg-[#f8fafc]">
+      <div className="container mx-auto px-4 max-w-6xl">
+
+        {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Meet Our Leadership Team
+          <h2 className="text-4xl font-bold text-[#243B53] mb-4">
+            Leadership Team
           </h2>
-          <p className="text-xl text-[#0a95b4] max-w-3xl mx-auto">
-            Experienced professionals dedicated to ensuring your telecom compliance success
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Senior professionals driving telecom compliance, policy, and regulatory excellence
           </p>
         </div>
 
-        {/* Team Members */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 card-hover"
-            >
-              <div className="flex flex-col md:flex-row items-start md:items-center mb-8">
-                {/* Avatar */}
-                <div className="mb-6 md:mb-0 md:mr-8">
-                  <div className="w-32 h-32 rounded-full bg-blue-300/30 flex items-center justify-center">
-                    <div className="text-4xl font-bold text-[#0a95b4]">
-                      {member.name.charAt(0)}
-                    </div>
-                  </div>
-                </div>
+        {/* Team Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {teamMembers.map((member, i) => (
+            <div key={i} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
 
-                {/* Info */}
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                  <p className="text-[#0a95b4] font-semibold mb-4">{member.position}</p>
-                  
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="flex items-center">
-                      <FaPhone className="mr-3 text-[#0a95b4]" />
-                      <a href={`tel:${member.phone}`} className="hover:text-[#0a95b4]">
-                        {member.phone}
-                      </a>
-                    </div>
-                    <div className="flex items-center">
-                      <FaEnvelope className="mr-3 text-[#0a95b4]" />
-                      <a href={`mailto:${member.email}`} className="hover:text-[#0a95b4]">
-                        {member.email}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Details */}
-              <div className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex items-center">
-                    <FaAward className="mr-3 text-yellow-400" />
-                    <div>
-                      <div className="text-sm text-[#0a95b4]">Experience</div>
-                      <div className="font-semibold">{member.experience}</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <FaGraduationCap className="mr-3 text-green-400" />
-                    <div>
-                      <div className="text-sm text-[#0a95b4]">Education</div>
-                      <div className="font-semibold">{member.education}</div>
-                    </div>
-                  </div>
+              {/* Top */}
+              <div className="flex items-center gap-6 mb-6">
+                <div className="w-20 h-20 rounded-full bg-[#0a95b4]/10 flex items-center justify-center text-3xl font-bold text-[#0a95b4]">
+                  {member.name.charAt(0)}
                 </div>
 
                 <div>
-                  <div className="flex items-center mb-3">
-                    <MdWork className="mr-2" />
-                    <span className="font-semibold">Areas of Expertise</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {member.expertise.map((area, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 bg-white/10 rounded-full text-sm"
-                      >
-                        {area}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-between pt-6 border-t border-white/20">
-                  <div className="flex items-center">
-                    <MdLocationOn className="mr-2" />
-                    <span>{member.location}</span>
-                  </div>
-                  <div className="flex space-x-3">
-                    <a href={member.social.linkedin} className="hover:text-[#0a95b4]">
-                      <FaLinkedin className="text-xl" />
-                    </a>
-                    <a href={member.social.twitter} className="hover:text-[#0a95b4]">
-                      <FaTwitter className="text-xl" />
-                    </a>
-                  </div>
+                  <h3 className="text-2xl font-bold text-[#243B53]">
+                    {member.name}
+                  </h3>
+                  <p className="text-[#0a95b4] font-semibold">
+                    {member.role}
+                  </p>
                 </div>
               </div>
+
+              {/* Experience */}
+              <div className="flex items-center gap-3 mb-6">
+                <FaAward className="text-yellow-500" />
+                <span className="font-medium text-gray-700">
+                  {member.experience}
+                </span>
+              </div>
+
+              {/* Expertise */}
+              <div className="mb-6">
+                <p className="font-semibold text-gray-800 mb-2">Expertise</p>
+                <div className="flex flex-wrap gap-2">
+                  {member.expertise.map((skill, idx) => (
+                    <span key={idx} className="px-3 py-1 text-sm bg-gray-100 rounded-full">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Contact */}
+              <div className="space-y-3 border-t pt-5">
+                <div className="flex items-center gap-3 text-gray-700">
+                  <FaPhone className="text-[#0a95b4]" />
+                  {member.phone}
+                </div>
+                <div className="flex items-center gap-3 text-gray-700">
+                  <FaEnvelope className="text-[#0a95b4]" />
+                  {member.email}
+                </div>
+                <div className="flex items-center justify-between pt-3">
+                  <div className="flex items-center gap-2 text-gray-600">
+                    <MdLocationOn />
+                    {member.location}
+                  </div>
+                  <a href={member.linkedin} className="text-[#0a95b4] hover:opacity-80">
+                    <FaLinkedin className="text-xl" />
+                  </a>
+                </div>
+              </div>
+
             </div>
           ))}
         </div>
 
-        {/* Team Expertise */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-          <h3 className="text-2xl font-bold mb-8 text-center">Our Collective Expertise</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-            {expertiseAreas.map((area, index) => (
-              <div key={index} className="text-center">
-                <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full ${area.color} mb-4`}>
-                  <span className="text-2xl font-bold">{area.count}+</span>
-                </div>
-                <h4 className="font-bold text-lg">{area.name}</h4>
-                <p className="text-sm text-[#0a95b4]">Years Experience</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Supporting Team */}
-          <div className="text-center">
-            <div className="inline-flex items-center px-6 py-3 bg-white/20 rounded-full">
-              <FaAward className="mr-3 text-yellow-400" />
-              <span>Supported by team of 25+ certified compliance professionals</span>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <p className="text-xl text-[#0a95b4] mb-8">
-            Ready to work with our expert team on your telecom compliance needs?
+        {/* Bottom CTA */}
+        <div className="mt-20 text-center">
+          <h3 className="text-2xl font-bold text-[#243B53] mb-4">
+            Backed by 25+ Certified Compliance Professionals
+          </h3>
+          <p className="text-gray-600 mb-8">
+            Delivering accurate, timely, and penalty-free telecom compliance
           </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-white text-[#0a95b4] font-bold rounded-lg hover:bg-blue-50 transition-colors"
-          >
-            Schedule Consultation
-          </a>
         </div>
+
       </div>
     </section>
   )
 }
-
-export default TeamSection

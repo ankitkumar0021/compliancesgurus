@@ -43,24 +43,30 @@ export default function IDPRContent() {
             <li>✅ Support Differentiated Services – Offer premium routing options.</li>
           </ul>
         </div>
-
         {/* What are IDPR Records */}
         <div>
           <h2 className="text-3xl font-bold mb-4">
             What are IDPR Records?
           </h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            IDPR records are data sets that contain information about:
-          </p>
-          <ul className="list-disc pl-6 text-gray-700 space-y-1 mb-4">
-            <li>The path a packet should follow across domains</li>
-            <li>Policy constraints (e.g., avoid regions, prioritize low latency)</li>
-            <li>Authentication and validation data</li>
-          </ul>
-          <p className="text-gray-700 leading-relaxed">
-            ISPs rely on these records to ensure compliance with inter-ISP agreements,
-            transparent service-level commitments, and improved customer trust.
-          </p>
+         <section className="py-10">
+      <div className="max-w-3xl px-4">
+
+        <p className="font-semibold mb-4">
+          IDPR records are data sets that contain information about:
+        </p>
+
+        <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+          <li>The path a packet should follow across domains</li>
+          <li>Policy constraints (e.g., avoid certain regions, prioritize low latency)</li>
+          <li>Authentication and validation data for secure communication</li>
+          <li>ISPs rely on these records to ensure:</li>
+          <li>Compliance with inter-ISP agreements</li>
+          <li>Transparent service-level commitments</li>
+          <li>Better customer trust and reliability</li>
+        </ul>
+
+      </div>
+    </section>
         </div>
 
         {/* Benefits for Customers */}
@@ -68,13 +74,13 @@ export default function IDPRContent() {
           <h2 className="text-3xl font-bold mb-4">
             Benefits of IDPR for ISP Customers
           </h2>
+          <p className="mb-4">From an end-user perspective, the adoption of IDPR records by ISPs offers clear benefits:</p>
           <ul className="space-y-2 text-gray-700">
             <li>🚀 More reliable connections across multiple regions</li>
             <li>📶 Better network performance for critical workloads</li>
             <li>🔒 Regulatory compliance with data sovereignty and security laws</li>
           </ul>
         </div>
-
         {/* Future of IDPR */}
         <div>
           <h2 className="text-3xl font-bold mb-4">
@@ -102,28 +108,45 @@ export default function IDPRContent() {
 
         {/* FAQs */}
         <div>
-          <h2 className="text-3xl font-bold mb-6">
-            Frequently Asked Questions (FAQs)
-          </h2>
+  <h2 className="text-3xl font-bold mb-6">
+    Frequently Asked Questions (FAQs)
+  </h2>
 
-          <div className="space-y-4 text-gray-700">
-            <p><strong>Q1:</strong> What is IDPR in networking?<br />
-              <strong>A:</strong> IDPR enables ISPs to route traffic based on security, compliance,
-              and performance policies.</p>
+  <div className="space-y-6 text-gray-700 leading-relaxed">
+    <p>
+      <strong>Q1: What is IDPR in networking?</strong><br />
+      <strong>A:</strong> IDPR (Inter-Domain Policy Routing) is a routing architecture that enables
+      ISPs to control how traffic flows between networks based on policies like security,
+      compliance, and performance.
+    </p>
 
-            <p><strong>Q2:</strong> Why are IDPR records important for ISPs?<br />
-              <strong>A:</strong> They help enforce routing policies, improve security, and enhance QoS.</p>
+    <p>
+      <strong>Q2: Why are IDPR records important for ISPs?</strong><br />
+      <strong>A:</strong> IDPR records allow ISPs to enforce custom routing policies, improve
+      security, enhance QoS, and provide better services to customers.
+    </p>
 
-            <p><strong>Q3:</strong> How does IDPR differ from BGP?<br />
-              <strong>A:</strong> BGP focuses on efficiency, while IDPR emphasizes policy enforcement.</p>
+    <p>
+      <strong>Q3: How does IDPR differ from BGP?</strong><br />
+      <strong>A:</strong> While BGP focuses on path efficiency and reachability, IDPR emphasizes
+      policy enforcement, enabling ISPs to route traffic based on rules such as compliance,
+      trust, and performance.
+    </p>
 
-            <p><strong>Q4:</strong> What are the benefits of IDPR for customers?<br />
-              <strong>A:</strong> Reliable connections, better performance, and regulatory compliance.</p>
+    <p>
+      <strong>Q4: What are the benefits of IDPR for customers?</strong><br />
+      <strong>A:</strong> Customers benefit from reliable connections, faster performance for
+      business-critical applications, and compliance with security and data sovereignty laws.
+    </p>
 
-            <p><strong>Q5:</strong> Where can I get help with IDPR compliance?<br />
-              <strong>A:</strong> You can contact <span className="font-semibold">Compliances Gurus</span> for expert assistance.</p>
-          </div>
-        </div>
+    <p>
+      <strong>Q5: Where can I get help with IDPR compliance for ISPs?</strong><br />
+      <strong>A:</strong> You can contact <span className="font-semibold">Compliances Gurus </span> 
+       using the details below.
+    </p>
+  </div>
+</div>
+
 
       </div>
     </section>

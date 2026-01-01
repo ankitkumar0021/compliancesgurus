@@ -56,11 +56,11 @@ export default function CompliancePlanning() {
   ]
 
   return (
-    <section className="relative py-20 md:py-10 overflow-hidden bg-gradient-to-b from-blue-50 via-white to-blue-50">
+    <section className="relative py-20 md:py-10 overflow-hidden bg-linear-to-b from-blue-50 via-white to-blue-50">
       <div className="relative container mx-auto px-4">
 
         {/* Stats Banner */}
-        <div className="mb-16 bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-8 text-white">
+        <div className="mb-16 bg-linear-to-r from-blue-900 to-blue-800 rounded-2xl p-8 text-white">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { value: '100%', label: 'Compliance Accuracy' },
@@ -70,7 +70,7 @@ export default function CompliancePlanning() {
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold mb-2">{stat.value}</div>
-                <div className="text-[#0a95b4] text-sm">{stat.label}</div>
+                <div className=" text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -142,7 +142,7 @@ export default function CompliancePlanning() {
                     <div className="text-sm text-gray-600">{step.desc}</div>
                   </div>
                   {index < 3 && (
-                    <div className="hidden md:block absolute top-1/2 right-[-12px] w-12 h-1 bg-blue-300 rounded-full"></div>
+                    <div className="hidden md:block absolute top-1/2 -right-3 w-12 h-1 bg-blue-300 rounded-full"></div>
                   )}
                 </div>
               ))}
