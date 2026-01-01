@@ -20,7 +20,7 @@ const CTA = () => {
               <FaPhoneAlt className="text-3xl" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Call Now</h3>
-            <p className="text-[#0a95b4] mb-6">Speak directly with our compliance experts</p>
+            <p className="text-white mb-6">Speak directly with our compliance experts</p>
             <a
               href="tel:+918178861057"
               className="inline-block bg-white text-[#0a95b4] font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
@@ -34,7 +34,7 @@ const CTA = () => {
               <FaCalendarAlt className="text-3xl" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Schedule Consultation</h3>
-            <p className="text-[#0a95b4] mb-6">Free 30-minute compliance assessment</p>
+            <p className="text-white mb-6">Free 30-minute compliance assessment</p>
             <Link
               href="/contact"
               className="inline-block bg-white text-[#0a95b4] font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
@@ -48,7 +48,7 @@ const CTA = () => {
               <FaHeadset className="text-3xl" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Email Support</h3>
-            <p className="text-[#0a95b4] mb-6">Get detailed proposals and quotes</p>
+            <p className="text-white mb-6">Get detailed proposals and quotes</p>
             <a
               href="mailto:contact@compliancesgurus.com"
               className="inline-block bg-white text-[#0a95b4] font-bold py-3 px-8 rounded-lg hover:bg-blue-100 transition-colors"
@@ -73,12 +73,12 @@ const CTA = () => {
             >
               Get Free Compliance Audit
             </Link>
-            <Link
+            {/* <Link
               href="/services"
               className="btn-secondary text-[#0a95b4] inline-flex items-center justify-center"
             >
               View All Services
-            </Link>
+            </Link> */}
           </div>
           <p className="text-sm text-gray-500 mt-6">
             *Free compliance audit includes AGR calculation review and regulatory gap analysis

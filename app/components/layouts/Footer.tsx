@@ -4,7 +4,6 @@ import {
   FaFacebook,
   FaTwitter,
   FaLinkedin,
-  FaInstagram,
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
@@ -13,10 +12,9 @@ import { MdCopyright } from 'react-icons/md'
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <FaFacebook />, href: '#' },
-    { icon: <FaTwitter />, href: '#' },
-    { icon: <FaLinkedin />, href: '#' },
-    { icon: <FaInstagram />, href: '#' },
+    { icon: <FaFacebook />, href: 'https://www.facebook.com/compliancegurus' },
+    { icon: <FaTwitter />, href: 'https://x.com/Compl_Gurus_In' },
+    { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/compliance-gurus-484351384/' },
   ]
 
   return (
