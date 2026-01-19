@@ -58,7 +58,7 @@ const ApproachSection = () => {
       id: 'trai',
       title: 'TRAI & TTP Compliance',
       icon: <RiGovernmentLine className="text-3xl" />,
-      description: 'Full compliance with TRAI regulations and Telecom Trusted Portal requirements.',
+      description: 'A Broad Spectrum of Additional Compliance Services including TRAI and Telecom Trusted Portal (TTP) reporting.',
       details: [
         'TRAI quality of service reporting',
         'TTP (Telecom Trusted Portal) submissions',

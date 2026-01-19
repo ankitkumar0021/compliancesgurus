@@ -12,8 +12,8 @@ export default function Home() {
     <>
       <MainBanner />
       <CompliancePlanning />
-      <ComplianceCards />
       <LeadershipOverview />
+      <ComplianceCards />
       <MapSectionHome />
       <ImageTextSection />
       {/* <Hero /> */}
