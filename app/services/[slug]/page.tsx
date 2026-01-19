@@ -25,7 +25,7 @@ export default function ServicePage({ params }: Props) {
     <>
       <ServiceHero {...service.hero} image={service.hero.image || ""} />
       <ServiceMainHero {...service.mainHero} />
-      <ServiceTable sections={service.tableSections} />
+      <ServiceTable sections={[...service.tableSections]} />
       <ServiceCTA {...service.cta} />
     </>
   )

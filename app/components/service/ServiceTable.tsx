@@ -8,6 +8,7 @@ type TableSection = {
   rows: Row[]
 }
 
+
 export default function ServiceTable({
   sections,
 }: {
