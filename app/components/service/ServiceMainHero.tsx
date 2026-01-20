@@ -1,5 +1,5 @@
 "use client"
-import { FaMoneyBillWave } from "react-icons/fa"
+import Image from "next/image"
 
 interface ServiceMainHeroProps {
   title: string
@@ -15,8 +15,14 @@ export default function ServiceMainHero({
       <div className="max-w-6xl mx-auto px-4 text-center text-white">
         
         <div className="flex justify-center mb-6">
-          <div className="w-14 h-14 rounded-full border-2 border-white flex items-center justify-center">
-            <FaMoneyBillWave className="text-xl" />
+          <div className="w-30 h-30 rounded-full border-2 border-white flex items-center justify-center overflow-hidden">
+            <Image
+              src="/images/financial-advisor.png"  
+              alt="Money Icon"
+              width={70}
+              height={70}
+              className="object-contain"
+            />
           </div>
         </div>
 
