@@ -3,13 +3,22 @@ import { Resend } from 'resend';
 
 export const runtime = 'nodejs';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
+    const apiKey = process.env.RESEND_API_KEY;
+    const emailTo = process.env.EMAIL_TO;
+    const emailFrom = process.env.EMAIL_FROM || 'onboarding@resend.dev';
 
-    const { name, email, phone, subject, message } = body;
+    if (!apiKey || !emailTo) {
+      return NextResponse.json(
+        { error: 'Email service not configured' },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(apiKey);
+
+    const { name, email, phone, subject, message } = await req.json();
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -19,8 +28,8 @@ export async function POST(req: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: process.env.EMAIL_FROM || 'onboarding@resend.dev',
-      to: process.env.EMAIL_TO as string,
+      from: emailFrom,
+      to: [emailTo],
       replyTo: email,
       subject: subject || 'New Contact Form Submission',
       html: `
@@ -43,7 +52,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({
       success: true,
-      id: data?.id, // ✅ CORRECT
+      id: data?.id,
     });
 
   } catch (err) {

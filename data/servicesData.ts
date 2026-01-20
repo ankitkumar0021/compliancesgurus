@@ -246,7 +246,7 @@ This helps TRAI track the development and modernization of telecom infrastructur
     },
   },
 
-  "trusted-telecom-portal": {
+  "trusted-telecom-portal": {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     mainHero: {
       title: "Trusted Telecom Portal",
       description:
