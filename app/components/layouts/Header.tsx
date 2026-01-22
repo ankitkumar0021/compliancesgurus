@@ -101,7 +101,7 @@ export default function Header() {
         {/* Mobile Menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300
-          ${open ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}
+          ${open ? 'max-h-200 opacity-100' : 'max-h-0 opacity-0'}`}
         >
           <div className="bg-white px-4 pb-6 space-y-2">
             {navItems.map(item =>

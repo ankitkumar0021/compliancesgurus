@@ -124,7 +124,7 @@ const MapSection = () => {
             </div>
 
             {/* Parking Info */}
-            <div className="bg-white rounded-2xl shadow-xl p-6">
+            {/* <div className="bg-white rounded-2xl shadow-xl p-6">
               <h3 className="text-xl font-bold text-[#0a95b4] mb-4">Visitor Information</h3>
               
               <div className="space-y-3">
@@ -154,7 +154,7 @@ const MapSection = () => {
                   Appointments recommended for meetings.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

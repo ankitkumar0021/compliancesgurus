@@ -1,57 +1,42 @@
 'use client'
-
-import { FaMoneyBillWave, FaBullseye } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function ComplianceCards() {
   const cards = [
     {
       title: 'AGR (Adjusted Gross Revenue) Calculations',
-      description:
-        'We handle Adjusted Gross Revenue (AGR) calculations to provide accurate financial insights. This helps in precise financial planning and reporting.',
+      desc: 'We handle Adjusted Gross Revenue (AGR) calculations to provide accurate financial insights.',
       bg: 'bg-[#354B63]',
-      text: 'text-white',
-      icon: <FaMoneyBillWave className="text-3xl text-white" />,
+      img: '/images/financial-advisor.png',
     },
     {
       title: 'Comprehensive Monthly, Quarterly, and Annual Reporting',
-      description:
-        'We offer comprehensive reporting on a monthly, quarterly, and annual basis. This ensures you receive detailed insights regularly to track progress and make informed decisions.',
+      desc: 'We offer detailed monthly, quarterly, and annual reporting to track progress effectively.',
       bg: 'bg-[#078AA3]',
-      text: 'text-white',
-      icon: <FaBullseye className="text-3xl text-white" />,
+      img: '/vision.png',
     },
     {
       title: 'A Broad Spectrum of Additional Compliance Services',
-      description:
-        'Including TRAI and Telecom Trusted Portal (TTP) reporting.',
+      desc: 'Including TRAI and Telecom Trusted Portal (TTP) reporting.',
       bg: 'bg-[#354B63]',
-      text: 'text-white',
-      icon: null,
-      border: 'border border-gray-200',
+      img: null, 
     },
   ]
 
   return (
     <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className={`${card.bg} ${card.text} ${card.border || ''} rounded-none p-10 min-h-105 flex flex-col`}
-            >
-              {card.icon && <div className="mb-8">{card.icon}</div>}
-
-              <h3 className="text-3xl font-bold leading-tight mb-8">
-                {card.title}
-              </h3>
-
-              <p className="text-sm leading-relaxed opacity-90">
-                {card.description}
-              </p>
-            </div>
-          ))}
-        </div>
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        {cards.map((c, i) => (
+          <div key={i} className={`${c.bg} text-white p-10 flex flex-col`}>
+            {c.img && (
+              <div className="mb-8 w-18 h-18 rounded-full flex items-center justify-center">
+                <Image src={c.img} alt={c.title} width={50} height={50} />
+              </div>
+            )}
+            <h3 className="text-3xl font-bold mb-6">{c.title}</h3>
+            <p className="text-sm opacity-90">{c.desc}</p>
+          </div>
+        ))}
       </div>
     </section>
   )

@@ -64,19 +64,16 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-100 to-gray-200">
+    <section className="py-24 bg-linear-to-br from-gray-100 to-gray-200">
       <div className="max-w-5xl mx-auto px-4">
         <div className="bg-white rounded-2xl shadow-xl p-10 md:p-14">
-
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Contact Us
           </h2>
           <p className="text-center text-gray-600 mb-10 max-w-xl mx-auto">
             Have questions or need assistance? Fill out the form and our team will get back to you shortly.
           </p>
-
           <form onSubmit={handleSubmit} className="space-y-6">
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 type="text"
@@ -87,7 +84,6 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className="w-full border rounded-xl px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
               />
-
               <input
                 type="email"
                 name="email"
@@ -97,7 +93,6 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className="w-full border rounded-xl px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
               />
-
               <input
                 type="tel"
                 name="phone"
